@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="freedom">
+    <title>提问主页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+.dropdown-toggle span:nth-child(2){
+    display: inline-block;margin-left: 3px;
+}
+.container{
+    text-align: center;
+}
+        .container>span{
+            color: white;
+            font-size: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .main{
+            overflow: hidden;
+        }
+        .main-left{
+            text-align: left;
+        }
+        .main-right{
+            text-align: left;
+        }
+        .main-left img{
+            height: 100px;width: 100px;border-radius: 50%;
+        }
+        .answer .main-left {
+            text-align: right;
+        }
+         .answer .main-left img{
+             height: 100px;width: 100px;border-radius: 50%;
+
+         }
+    </style>
+</head>
+<body>
+<header>
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" onclick="location.href='index.html'">返回主页</a>
+            </div>
+            <span>个人主页</span>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li onclick="location.href='ask.html'"><a href="#"><span class="glyphicon glyphicon-plus-sign" ></span> 提问</a></li>
+                <!--<li ><a href="#"><span class="glyphicon glyphicon-user" ></span>姓名 </a></li>-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" ></span>
+                        <span>姓名</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ><a href="#">个人资料</a></li>
+                        <li ><a href="#">退出</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+<main class="container question">
+<!--<div class="main">-->
+    <div class="main-left">
+        <img src="" alt=""/>
+    </div>
+    <div class="main-right">
+        <h4>姓名</h4>
+        <p>内容</p>
+        <p>事件</p>
+    </div>
+<!--</div>-->
+</main>
+<section class="container answer">
+    <!--<div class="main">-->
+        <div class="main-left">
+            <img src="" alt=""/>
+        </div>
+        <div class="main-right">
+            <h4>姓名</h4>
+            <p>内容</p>
+            <p>事件</p>
+        </div>
+    <!--</div>-->
+</section>
+
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js1/jquery.js"></script>
+<script src="js1/jquery.cookie.js"></script>
+<script src="js1/index1.js"></script>

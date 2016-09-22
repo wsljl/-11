@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="freedom">
+    <title>注册页面</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn-default{
+            width: 100%;background-color: green;font-weight: bold;
+        }
+        header .container div{
+            text-align: center;
+        }
+        .container div>span{
+            color: white;
+            font-size: 20px;
+            display: block;
+            padding-top: 10px;
+        }
+        #he{
+            width: 945px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+
+            <div>
+                <!--向左对齐-->
+                <p class="navbar-text navbar-left"><span class="glyphicon glyphicon-chevron-left" onclick="location.href='login.html'"></span></p>
+                <!--向右对齐-->
+                <span>注册</span>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+
+    <div class="container">
+        <form class="form-horizontal" role="form" method="post">
+            <div class="form-group" >
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="请输入名字" required>
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" required>
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="col-sm-10">
+                    <input type="password" class="form-control"  placeholder="请再次输入密码" required>
+                </div>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>男
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">女
+                </label>
+            </div>
+
+            <div class="form-group" style="margin-left: 0">
+                <select class="form-control" id="he" >
+                    <option value="">HTML5</option>
+                    <option value="">JAVA</option>
+                    <option value="">CSS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class=" col-sm-10">
+                    <button type="submit" class="btn btn-default" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >注册</button>
+                    <!--class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"-->
+                </div>
+            </div>
+        </form>
+    </div>
+
+</main>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">问答主页</h4>
+            </div>
+            <div class="modal-body">请先输入所需内容</div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-primary" >返回填写</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js1/jquery.js"></script>
+<script src="js1/zhuce.js"></script>
+
+<script src="js1/jquery.cookie.js"></script>
+
